@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.roehamptonroomapp">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <!-- permission for location in google map -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- permission for internet -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RoehamptonRoomApp">
+        <activity android:name=".Add_Review"
+            android:parentActivityName=".Book_Info" /> <!-- set Add_Review activity as parent of Book_Info activity -->
+        <activity
+            android:name=".Review_List"
+            android:parentActivityName=".Book_Info" /> <!-- set Review_List activity as parent of Book_Info activity -->
+        <activity
+            android:name=".Book_Info"
+            android:parentActivityName=".Library" /> <!-- set Book_Info activity as parent of Library activity -->
+        <activity
+            android:name=".Important_Places"
+            android:parentActivityName=".Floor_Map" /> <!-- set Floor_Map activity as parent of Important_Places activity -->
+        <activity
+            android:name=".Student_Hub"
+            android:parentActivityName=".Floor_Map" /> <!-- set Floor_Map activity as parent of Student_Hub activity -->
+        <activity android:name=".Fourth_Floor" />
+        <activity android:name=".Third_Floor" />
+        <activity android:name=".Second_Floor" />
+        <activity android:name=".First_Floor" />
+        <activity android:name=".Ground_Floor" />
+        <activity android:name=".Lower_Ground_1" />
+        <activity android:name=".Lower_Ground_2" />
+        <activity
+            android:name=".Main_Campus"
+            android:parentActivityName=".Floor_Map" /> <!-- set Floor_Map activity as parent of Main_Campus activity -->
+        <activity android:name=".Activities" />
+        <activity android:name=".Forum" />
+        <activity android:name=".Book_Sale" />
+        <activity
+            android:name=".Profile"
+            android:parentActivityName=".Dashboard" /> <!-- set Dashboard activity as parent of Profile activity -->
+        <activity android:name=".Login_Extra" />
+        <activity
+            android:name=".Forgot_Pass"
+            android:parentActivityName=".Login" /> <!-- set Login activity as parent of Forgot_Pass activity -->
+        <activity
+            android:name=".Library"
+            android:parentActivityName=".Dashboard" /> <!-- set Dashboard activity as parent of Library activity -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" /> <!-- list of activities -->
+        <activity
+            android:name=".Google_Map"
+            android:label="@string/title_activity_google__map"
+            android:parentActivityName=".Floor_Map" /> <!-- set Floor_Map activity as parent of Google_Map activity -->
+        <activity
+            android:name=".Floor_Map"
+            android:parentActivityName=".Dashboard" /> <!-- set Dashboard activity as parent of Floor_Map activity -->
+        <activity
+            android:name=".TimeTable"
+            android:parentActivityName=".Dashboard" /> <!-- set Dashboard activity as parent of Time Table activity -->
+        <activity android:name=".Dashboard" />
+        <activity
+            android:name=".Register"
+            android:parentActivityName=".Login" /> <!-- set Login activity as parent of Register activity -->
+        <activity android:name=".Login"> <!-- launching activity -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

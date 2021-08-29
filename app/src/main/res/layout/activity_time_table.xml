@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimeTable">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_margin="40dp">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tV_timeTable_semester"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="12sp"></TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:background="@color/teal_700">
+
+            <TextView
+                android:id="@+id/tV_timeTable_week"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="14sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tV_timeTable_date1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="14sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tV_timeTable_date2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="14sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tV_timeTable_date3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="14sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tV_timeTable_date4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="14sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tV_timeTable_date5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="14sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tV_timeTable_date6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="14sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tV_timeTable_date7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="14sp">
+
+            </TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:background="@color/teal_700">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="Hours"
+                android:textColor="@color/white"
+                android:textSize="14sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="M"
+                android:textColor="@color/white"
+                android:textSize="14sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="T"
+                android:textColor="@color/white"
+                android:textSize="14sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="W"
+                android:textColor="@color/white"
+                android:textSize="14sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="T"
+                android:textColor="@color/white"
+                android:textSize="14sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="F"
+                android:textColor="@color/white"
+                android:textSize="14sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="S"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="14sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="S"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="14sp">
+
+            </TextView>
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="09:30/11:30"
+                android:textColor="@color/black"
+                android:background="@color/teal_700"
+                android:textSize="12sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tV_timeTable_MON1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="8sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tV_timeTable_TUE1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="8sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tV_timeTable_WED1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="8sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tV_timeTable_THU1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="8sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tV_timeTable_FRI1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="8sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tV_timeTable_SAT1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="8sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tV_timeTable_SUN1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="8sp">
+
+            </TextView>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="11:30/13:30"
+                android:background="@color/teal_700"
+                android:textColor="@color/black"
+                android:textSize="12sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tV_timeTable_MON2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="8sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tV_timeTable_TUE2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="8sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tV_timeTable_WED2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="8sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tV_timeTable_THU2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="8sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tV_timeTable_FRI2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="8sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tV_timeTable_SAT2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="8sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tV_timeTable_SUN2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="8sp">
+
+            </TextView>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="14:30/16:30"
+                android:background="@color/teal_700"
+                android:textColor="@color/black"
+                android:textSize="12sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tV_timeTable_MON3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="8sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tV_timeTable_TUE3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="8sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tV_timeTable_WED3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="8sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tV_timeTable_THU3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="8sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tV_timeTable_FRI3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="8sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tV_timeTable_SAT3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="8sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tV_timeTable_SUN3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="8sp">
+
+            </TextView>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_timeTable_previous_week"
+            android:layout_width="129dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:text="Previous Week"
+            app:backgroundTint="#009688"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.753" />
+
+        <Button
+            android:id="@+id/btn_timeTable_next_week"
+            android:layout_width="129dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="73dp"
+            android:layout_marginLeft="73dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:text="Next Week"
+            app:backgroundTint="#009688"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_timeTable_previous_week"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.753" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="411dp"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            android:src="@drawable/logo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>
